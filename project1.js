@@ -16,11 +16,9 @@ var summer = function(userInt) {
 
           {counter+=i}
 
-          else {counter=counter}
-
         i+=1;
       }
 return counter;
-}; 
+};
 
 summer();
