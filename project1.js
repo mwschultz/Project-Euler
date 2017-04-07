@@ -3,22 +3,18 @@
 
 //Project Euler: Problem 1
 
-var counter = 0;
-var i = 0;
-var userNumber = prompt("Enter a number!");
-var userInt = parseInt(userNumber);
+var summer = function() {
+  var counter = 0;
+  var i = 0;
+  var userInt = parseInt(document.getElementById('inputValue').value);
+    while(i<userInt) {
 
-var summer = function(userInt) {
+        if (i%3 === 0 || i%5 ===0)
 
-  while(i<userNumber) {
+            {counter+=i}
 
-      if (i%3 === 0 || i%5 ===0)
-
-          {counter+=i}
-
-        i+=1;
-      }
-return counter;
+          i+=1;
+        }
+  /*return counter;*/
+document.getElementById('displayOne').value = counter;
 };
-
-summer();
